@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Number</title>
+    </head>
+    <body>
+
+        <label>Enter Mobile Number</label>
+        <input type="number"  id="num" /><br>
+
+        <span id="a" style="color: red;font-size: 10px;"> </span><br><br>
+        <input type="submit" onclick="valid()"/>
+    </body>
+    <script>
+        let valid=()=>{
+            let n=document.getElementById("num").value
+           // document.write(n)
+            let k=n.toString()
+            //document.write(k)
+            
+            if(k.length==10 && k.charAt(0)>5 ){
+                return true
+            }
+            else{
+                //alert("enter valid mobile number")
+                document.getElementById('a').innerHTML="enter valid mobile number"
+
+            }
+        
+        }
+    </script>
+</html>
