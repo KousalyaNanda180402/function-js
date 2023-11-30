@@ -1,0 +1,7 @@
+const x=require("os")
+console.log(x.arch())
+console.log(x.platform())
+console.log(x.tmpdir())
+console.log(x.homedir())
+console.log(x.freemem())
+console.log(x.totalmem())
