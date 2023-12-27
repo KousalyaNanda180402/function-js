@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button id="b1" style="background-color:bisque" onclick="click()" >click</button>
+        <button id="b2" style="background-color:bisque" onmouseover="over()" >Mouse Over</button>
+        <button id="b3" style="background-color:bisque" ondblclick="dbclick()" >dblclick</button>
+        <script>
+            function over(){
+                document.getElementById("b2").style.color = "red";
+            }
+            function dbclick(){
+                document.getElementById("b3").style.color = "red";
+            }
+            function click(){
+                document.getElementById("b1").style.color = "red";
+            }
+        </script>
+    </body>
+</html>
